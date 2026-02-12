@@ -1,0 +1,13 @@
+
+# Basado en el estándar de Google, pero con indentación de 4 espacios (más común)
+BasedOnStyle: Google
+Language: Cpp
+IndentWidth: 4
+ColumnLimit: 100
+AccessModifierOffset: -4
+# Ubicación de las llaves: estilo "Attach" (en la misma línea)
+BreakBeforeBraces: Attach
+# Ordena los #include alfabéticamente de forma automática
+SortIncludes: true
+# No permite funciones cortas en una sola línea para mayor legibilidad
+AllowShortFunctionsOnASingleLine: None

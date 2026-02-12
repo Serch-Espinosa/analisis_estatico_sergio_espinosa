@@ -1,0 +1,19 @@
+
+# Activamos los grupos de reglas más importantes
+Checks: >
+  bugprone-*,
+  modernize-*,
+  performance-*,
+  readability-*,
+  cppcoreguidelines-*,
+  -readability-braces-around-statements,
+  -modernize-use-trailing-return-type
+
+# Convierte las advertencias en errores para que GitHub Actions falle si algo está mal
+WarningsAsErrors: '*'
+
+CheckOptions:
+  - key:             readability-identifier-naming.VariableCase
+    value:           lower_case
+  - key:             modernize-use-nullptr.NullMacros
+    value:           'NULL'
